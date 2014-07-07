@@ -4,4 +4,15 @@ block content
   h1= title
   p Welcome to #{title}
 
-  paper-button(label="flat button")
+  p
+    paper-button(label="button",onclick="document.querySelector('#toast').show()")
+  p
+    paper-checkbox
+
+  paper-toast(text="hello", id="toast")
+
+  section
+    h4 Are you coming?
+    paper-radio-group(selected=0)
+      paper-radio-button(label="Yes")
+      paper-radio-button(label="No")
